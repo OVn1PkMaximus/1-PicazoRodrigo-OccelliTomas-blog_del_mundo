@@ -1,0 +1,32 @@
+body{background-color: bisque;
+color: blueviolet;}
+
+article{background-color: blanchedalmond;
+padding: 1.5rem;
+border: 1px solid white
+}
+
+#titulo del blog{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.resaltado{
+    color: yellow;
+}
+
+nav>ul>li { 
+    list-style: none;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+}
+
+#footer_blog {
+    margin: 2rem;
+}
+
+.ilustracion { 
+    
+}
