@@ -1,45 +1,63 @@
-body{background-color: aliceblue;}
-body{color: brown;}
-h1{color: blue;}
-
-.titulodelblog{text-align: center; font-size: 2rem;}
-
-/* grid */
-section {
+body{background-color: bisque;
+    color: blueviolet;}
     
-    /* despliégate como  grid */
-    display: grid;
-    /* Crea 12 columnas cada una de una fracción usando la función repeat*/
-    grid-template-columns: repeat(12, 1fr);
-    /* deja que las filas(renglones) ocupen el alto que necesitan */
-    grid-auto-rows: auto;
-    /* añade un espacio entre los elementos del grid de 3rem */
-    gap: 3rem;
-}
-
-/* Termina grid */
-
-/* apunta sólo a los header que son hijos directos de section */
-section>header {
-    /* esta sección se extenderá 12 columnas. */
-    grid-column: span 12;
-}
-
-
-/* apunta sólo a los header que son hijos directos de section */
-section>main {
-    /* esta sección se extenderá 12 columnas. */
-    grid-column: span 8;
-}
-
-/* apunta sólo a los header que son hijos directos de section */
-section>aside {
-    /* esta sección se extenderá 12 columnas. */
-    grid-column: span 4;
-}
-
-/* apunta sólo a los header que son hijos directos de section */
-section>footer {
-    /* esta sección se extenderá 12 columnas. */
-    grid-column: span 2;
-}
+    article{background-color: blanchedalmond;
+    padding: 1.5rem;
+    border: 1px solid white
+    }
+    
+    #titulo del blog{
+        text-align: center;
+        font-size: 3rem;
+    }
+    
+    .resaltado{
+        color: yellow;
+    }
+    
+    nav>ul>li { 
+        list-style: none;
+    }
+    
+    nav>ul>li>a {
+        text-decoration: none;
+    }
+    
+    #footer_blog {
+        margin: 2rem;
+    }
+    
+    .ilustracion {
+        display: inline-block;
+        border: 4px solid #FFFFFF
+    }
+    
+    .ilustracion figcaption {
+        margin-top: 1rem;
+        margin-left: 1rem; 
+        front-style: italic;
+    }
+    
+    #footer_blog{
+        margin:2rem;
+    }
+    
+    section{
+        display: grid;
+        grid-template-columns: repeat (12, 1fr);
+        grid-auto-rows:auto;
+        gap: 3rem;
+    }
+    
+    section>header{
+        grid-column: span 12;
+    }
+    section>main{
+        grid-column: span 8;
+    }
+    section>aside{
+        grid-column: span 4;
+    }
+    section>footer{
+        grid-column: span 12;
+    }
