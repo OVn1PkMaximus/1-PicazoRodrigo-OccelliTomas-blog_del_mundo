@@ -35,7 +35,7 @@ nav>ul>li>a {
 .ilustracion figcaption {
     margin-top: 1rem;
     margin-left: 1rem; 
-    front-style: italic;
+    font-style: italic;
 }
 
 #footer_blog{
